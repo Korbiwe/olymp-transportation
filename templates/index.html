@@ -2,11 +2,46 @@
 
 
 {% block page_content %}
-    <div class="row">
-        <div class="card col-12-sm">
+<div class="row">
+    <div class="container text-justify" style="white-space: pre-wrap;">
+        <div class="card">
+            <div id="info" class="card-header card-header-primary">Информация</div>
             <p>
-                Here's a description of all the stuff.
+                Нажмите "Войти" наверху.
+                Login: admin@example.com
+                Password: password
+                После первого входа перекинет на главную, нажмите "Войти" еще раз и пользуйтесь вкладками наверху,
+                чтобы редактировать базу данных.
+
+                Рекомендуемый порядок:
+                1) Создайте типы транспорта (VehicleType);
+                2) Создайте транспортные парки (Park);
+                3) Создайте конкретный транспорт и водителей используя созданное в шагах выше (Driver, Vehicle);
+                4) Создайте остановки и из них маршруты (Stop, Route);
+                5) Совместите все вместе в конкретные записи в расписании (ScheduleEntry);
+                6) ???
+                7) PROFIT!!!
+
+                P. S. После окончания олимпиады не было внесено никаких исправлений, исключая эту страницу с информацией.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card-header card-header-danger">Что можно было бы доработать</div>
+            <p>
+                1) Центральный "вид" по расписанию, с поиском, фильтрацией и прочими фейерверками.
+                2) Убрать неудобство логина.
+                3) Перенести все на MySQL или Postgres.
+            </p>
+        </div>
+        <div class="card">
+            <div class="card-header card-header-info">Контакты:</div>
+            <p>
+                <a href="https://vk.com/korbiwe">VK</a>
+                <a href="mailto://korbiwensky@gmail.com">korbiwensky@gmail.com</a>
+                <a href="https://github.com/Korbiwe/olymp-transportation">Source code (github)</a>
             </p>
         </div>
     </div>
+</div>
+
 {% endblock %}
