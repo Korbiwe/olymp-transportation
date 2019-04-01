@@ -1,0 +1,19 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+{{ super() }}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h1>Wut? U there?</h1>
+            <p class="lead">
+                gotta sign in you scum
+            <p>
+                <a class="btn btn-primary" href="{{ url_for('security.login') }}">Login</a>
+            </p>
+            <p>
+                <a class="btn btn-primary" href="/"><i class="glyphicon glyphicon-chevron-left"></i>Run!</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock body %}

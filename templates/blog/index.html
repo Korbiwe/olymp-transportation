@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% import 'macros.html' as macros %}
+{% block page_content %}
+<h1>Hello, {{ username }}!</h1>
+{% if is_owner %}
+    <h2>Welcome to your own blog!</h2>
+{% endif %}
+{% endblock %}
+
+

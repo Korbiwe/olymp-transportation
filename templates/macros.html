@@ -1,0 +1,9 @@
+<!-- you can implement your macros here. and it is actually wise to do so instead of just moving html code into
+     another file. you can render stuff here. -->
+{% macro render_nav_item(link, text) %}
+    <li class="active nav-item ">
+        <a class="nav-link" href= '{{ link }}'>
+            {{ text }}
+        </a>
+    </li>
+{% endmacro %}
